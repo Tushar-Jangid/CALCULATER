@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Calculator</title>
+    <meta name="description" content="A realistic physical calculator UI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="calculator-body">
+        <div class="display">
+            <div id="previous-operand" class="previous-operand"></div>
+            <div id="current-operand" class="current-operand">0</div>
+        </div>
+        
+        <div class="keypad">
+            <button class="btn fn-btn" data-action="clear">AC</button>
+            <button class="btn fn-btn" data-action="delete">DEL</button>
+            <button class="btn fn-btn" disabled></button>
+            <button class="btn op-btn" data-operation="divide">÷</button>
+            
+            <button class="btn num-btn" data-number="7">7</button>
+            <button class="btn num-btn" data-number="8">8</button>
+            <button class="btn num-btn" data-number="9">9</button>
+            <button class="btn op-btn" data-operation="multiply">×</button>
+            
+            <button class="btn num-btn" data-number="4">4</button>
+            <button class="btn num-btn" data-number="5">5</button>
+            <button class="btn num-btn" data-number="6">6</button>
+            <button class="btn op-btn" data-operation="subtract">−</button>
+            
+            <button class="btn num-btn" data-number="1">1</button>
+            <button class="btn num-btn" data-number="2">2</button>
+            <button class="btn num-btn" data-number="3">3</button>
+            <button class="btn op-btn" data-operation="add">+</button>
+            
+            <button class="btn num-btn zero-btn" data-number="0">0</button>
+            <button class="btn num-btn" data-number=".">.</button>
+            <button class="btn eq-btn" data-action="calculate">=</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
